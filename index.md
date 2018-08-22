@@ -17,7 +17,7 @@ kdfd
 df
 ### title 3
 
-This website is devide in four sections:
+This website is divided in four sections:
 1. [Getting started](pages/Gilcompa) where a general overview is provided.
 2. [A visual story](/pages/Milani) is developped to analyse some particular cases.
 3. [The risk calculator](/pages/risk_calculator), a quick tool to compute the risk associated to roads in Geneva
