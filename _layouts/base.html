@@ -22,14 +22,16 @@ common-js:
   <body>
 
     {% include gtm_body.html %}
-    {% include google_analytics.html %}
-    {% include disqus.html %}
+
 
     {% include nav.html %}
 
     {{ content }}
 
+    {% include google_analytics.html %}
+    {% include disqus.html %}
     {% include footer.html %}
+
 
     {% include footer-scripts.html %}
 
