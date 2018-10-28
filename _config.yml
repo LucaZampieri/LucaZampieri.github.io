@@ -29,7 +29,7 @@ navbar-links:
 #    - lala: "lala"
 #    - raw Map: "maps/map1"
 #    - Embedded map: "maps/map_test"
-  CV: "pages/CV"
+  CV: "img/CV Luca (09_2018).pdf"
   Blog:   "pages/Blog"
   Projects:
     - StaySafeGeneva: "pages/StaySafeGenevaProject"
