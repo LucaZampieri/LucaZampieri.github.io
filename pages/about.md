@@ -1,17 +1,18 @@
 ---
 layout: page
 title: About
-subtitle: What?
+subtitle: Few think and thanks
 ---
 
-## Members
+### Author:
 * [Luca](https://people.epfl.ch/luca.zampieri?lang=en)
 
+### Miscellanous:
 
-# Few links and thanks
-**A big special thanks to he group _Hop Suisse_ of last year that let us get inspired by some part  their code and gave us guidelines for working with web interactivity**
+**Again big thank to dean Attali for the template:**
+[beautiful jekyll](https://github.com/daattali/beautiful-jekyll)
 
-### Usefull links:
+**Usefull links if you wanna display results on a website:**
 
 * Corresponding [Github repository](https://github.com/StaySafeGeneva/StaySafeGeneva.github.io/)
 * [Beautifull Jekyll](http://deanattali.com/beautiful-jekyll/) that we used as theme for the website
