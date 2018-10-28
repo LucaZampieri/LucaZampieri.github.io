@@ -13,10 +13,6 @@ title: Map embedded2
 ### main_causes_ALL
 {% include main_causes_ALL.html %}
 
-### pluie
-
-{% include PLUIE.html %}
-
 ### pietons
 {% include pietons.html %}
 
