@@ -23,12 +23,6 @@ description: Learning.
 
 # List of links in the navigation bar
 navbar-links:
-#  Tests:
-#    - Test leaflet: "test_leaflet"
-#    - Test Bokeh: "plotting"
-#    - lala: "lala"
-#    - raw Map: "maps/map1"
-#    - Embedded map: "maps/map_test"
   CV: "img/CV Luca (09_2018).pdf"
   Travels:   "pages/travels"
   Projects:
@@ -48,11 +42,11 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-#avatar: "/img/SwissRedCross.png"
+avatar: "/img/ice1.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+# title-img: "/img/ice1.jpg"
 
 # --- Background colour/image options --- #
 
