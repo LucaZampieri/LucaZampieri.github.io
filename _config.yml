@@ -23,7 +23,7 @@ description: Learning.
 
 # List of links in the navigation bar
 navbar-links:
-  CV: "img/CV Luca (09_2018).pdf"
+  CV: "img/CV_Luca.pdf"
   Travels:   "pages/travels"
   Projects:
     - Overview: "pages/Project_overview"
