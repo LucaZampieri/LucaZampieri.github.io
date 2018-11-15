@@ -34,7 +34,9 @@ navbar-links:
     - EEG brain signal classification: "https://github.com/LucaZampieri/DeepLove"
     - Convex optimization: "https://github.com/LucaZampieri/Convex_opti2018"
     - POD HiMod (private for the moment): "https://github.com/LucaZampieri/podHimod"
-  About: "pages/about"
+  More:
+    - About: "pages/about"
+    - Test: "pages/test"
 #  About:
 #    - Team and project: "pages/about"
 #    - References: "pages/appendix"
