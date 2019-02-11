@@ -21,3 +21,4 @@ subtitle: Few think and thanks
 * Bokeh documentation, in particular the one about  [components](http://bokeh.pydata.org/en/latest/docs/user_guide/embed.html#components)  
 * Some [Basis](https://www.w3schools.com/html/html_css.asp) for understanding HTML, CSS and JS
 * [Video](https://www.youtube.com/watch?v=SWVjQsvQocA) about Jekyll to understand the layouts
+* For the css colors available: https://www.quackit.com/css/css_color_codes.cfm
