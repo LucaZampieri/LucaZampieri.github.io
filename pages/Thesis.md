@@ -28,6 +28,11 @@ use-site-title: true
 * Friday: **Holyday**
 
 ## Week 8 (08/04 - 12/04)
+
+---
+**Almost half!!**
+---
+
 ## Week 7 (01/04 - 05/04)
 ## Week 6 (25/03 - 29/03)
 ## Week 5 (18/03 - 22/03)
@@ -49,6 +54,16 @@ Actually I am here below
   * Went to Reinforcement Learning
   * Start writing the net & prepare the data to be fed to the net --> did SVM to do a baseline
   * ~See Andrea for numerical problems~ worked late + Auriane instead  
+
+How to coarsen the graph?
+  1. Michael's methods changes the nodes :'(
+  2. Sequentially with numpy? (it is a bit aleatoric...)
+  3. Random (--> bad idea?)
+  4. Do we really care? at the end its still a graph...
+  5. How to coarsen the surface itself?
+
+
+
 In the following A is the weighted Adjacency matrix (i.e. W in some notations)
 $$
 a_{ij}=exp(\frac{-||x_i-x_j||^2_2}{\sigma^2})\\
