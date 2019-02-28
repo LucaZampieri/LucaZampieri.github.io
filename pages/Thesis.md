@@ -46,10 +46,10 @@ Actually I am here below
 * Friday:
   * Have a non-working neural-net on the graph
 * Thursday:
-  * Go to Image Processing II
-  * Start writing the net & prepare the data to be fed to the net
-  * See Andrea for numerical problems  
-In the following A is the weighted Adjacency matrix (i.e. W in some notations) 
+  * Went to Reinforcement Learning
+  * Start writing the net & prepare the data to be fed to the net --> did SVM to do a baseline
+  * ~See Andrea for numerical problems~ worked late + Auriane instead  
+In the following A is the weighted Adjacency matrix (i.e. W in some notations)
 $$
 a_{ij}=exp(\frac{-||x_i-x_j||^2_2}{\sigma^2})\\
 x'=GCN(A,X)=\sigma(A'XW)
