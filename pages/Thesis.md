@@ -37,8 +37,6 @@ use-site-title: true
 ## Week 6 (25/03 - 29/03)
 ## Week 5 (18/03 - 22/03)
 ## Week 4 (11/03 - 15/03)
-## Week 3 (04/03 - 08/02)
-* WE --> StartHack
 
 ---
 
@@ -46,10 +44,30 @@ Actually I am here below
 
 ---
 
+## Week 3 (04/03 - 08/02)
+* WE --> StartHack
+
+* Thursday
+  * Morning --> IP (Image Processing)
+  * numpy2vtk function and visualize firsts results
+* Wednesday
+  * catch up IP
+  * NDA agreement
+* Tuesday
+  * Made the net work
+* Monday
+  * Made net work on toy data and trying to make it work on real data
+
+
+
+
+
+
 ## Week 2 (25/02 - 01/03)
 * WE --> France
 * Friday:
   * Have a non-working neural-net on the graph
+  * not working but will repair it Monday
 * Thursday:
   * Went to Reinforcement Learning
   * Start writing the net & prepare the data to be fed to the net --> did SVM to do a baseline
