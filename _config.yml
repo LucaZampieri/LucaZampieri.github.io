@@ -37,7 +37,7 @@ navbar-links:
   More:
     - About: "pages/about"
     - Test: "pages/test"
-    - Thesis: "pages/Thesis"
+    - Thesis: "pages/" # Thesis"
 #  About:
 #    - Team and project: "pages/about"
 #    - References: "pages/appendix"

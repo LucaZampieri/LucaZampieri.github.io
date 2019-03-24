@@ -25,6 +25,7 @@ use-site-title: true
 **Holydays**
 
 ## Week 9 (15/04 - 19/04)
+* WE --> marriage
 * Friday: **Holyday**
 
 ## Week 8 (08/04 - 12/04)
@@ -34,15 +35,38 @@ use-site-title: true
 ---
 
 ## Week 7 (01/04 - 05/04)
-## Week 6 (25/03 - 29/03)
-## Week 5 (18/03 - 22/03)
-## Week 4 (11/03 - 15/03)
-
+* WE --> Greyssonay
 ---
 
 Actually I am here below
 
 ---
+## Week 6 (25/03 - 29/03)
+* WE --> stay in Lausanne
+
+
+## Week 5 (18/03 - 22/03)
+* WE --> pdg with Auriane
+
+* Changed to Theo's code and re-read surface data.
+
+
+## Week 4 (11/03 - 15/03)
+* WE --> Crans with Auriane
+
+* Friday
+  * tried to install fineopen with no success but with a good understanding
+  of what was what. Openned a request of assistance
+* Thursday
+  * Morning --> IP
+  * Created the data in an efficient way
+* Wednesday
+  * Try to create adjacency
+* Tuesday
+  * played with paraview and tried to understand what was going on with Pierre's model
+* Monday
+  * Check results of the net
+
 
 ## Week 3 (04/03 - 08/02)
 * WE --> StartHack

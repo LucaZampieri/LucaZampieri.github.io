@@ -4,7 +4,7 @@ title: hidden page
 subtitle: for personal reminders
 ---
 
-This page is not really hiddent, but contains mostly irrelevant personal information like reminder and similar. Cheers.
+This page is not really hidden, but contains mostly irrelevant personal information like reminder and similar. Cheers.
 
 ### Youtube links for fluent
 
