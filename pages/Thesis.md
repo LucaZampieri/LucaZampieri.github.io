@@ -1,9 +1,22 @@
 ---
 layout: page
-title: Notebook
-subtitle: ---
+title: Master Thesis
+subtitle: Geometric Deep Learning for Computational Fluid Dynamics
 use-site-title: true
 ---
+Project
+
+
+**Abstract:** This master thesis explores ways to apply geometric deep learning to the field of numerical simulations with an emphasis on the Navier-Stokes equations. With the recent success of Deep Learning, there should be room for experimentation also in the field of fluid simulations. Here we lead such an experiment. We propose an end-to-end differentiable architecture that allow object-to-mesh predictions of fluid simulations. We provide a comparison with a baseline and visual results on three different datasets: airfoils, backward
+facing steps and winged drones.
+
+
+
+
+
+
+
+
 ## Week 18 (17/06 - 21/06)
 **21/06** Is the deadline for the written report
 

@@ -1,0 +1,69 @@
+---
+layout: page
+title: Master Thesis
+subtitle: Geometric Deep Learning for Computational Fluid Dynamics
+use-site-title: true
+---
+This master thesis explores ways to apply geometric deep learning to
+the field of numerical simulations with an emphasis on the Navier-Stokes
+ equations. With the recent success of Deep Learning, there should be
+  room for experimentation also in the field of fluid simulations.
+  Here we lead such an experiment. We propose an end-to-end differentiable
+  architecture that allow object-to-mesh predictions of fluid simulations.
+  We provide a comparison with a baseline and visual results on three different
+  datasets: airfoils, backward-facing steps and winged-drones.
+
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+    <div class="row">
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <p>
+          This master thesis explores ways to apply geometric deep learning to
+          the field of numerical simulations with an emphasis on the Navier-Stokes
+           equations. With the recent success of Deep Learning, there should be
+            room for experimentation also in the field of fluid simulations.
+            Here we lead such an experiment. We propose an end-to-end differentiable
+            architecture that allow object-to-mesh predictions of fluid simulations.
+            We provide a comparison with a baseline and visual results on three different
+            datasets: airfoils, backward-facing steps and winged-drones.
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <img src="../../img/flying_drone.png" alt="Drone" align="right" class="img-rounded"/>
+      </div>
+    </div>
+</div>
+
+
+
+dfsdf
+<img src="../../img/field-0-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<img src="../../img/field-1-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<img src="../../img/field-2-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+
+<p>
+  Once we got all x-velocity and y-velocity we wan also predict the
+  recirculation zone behind the step, as we illustrate below.
+  In the figure we show the simulation [left], and prediction [right].
+</p>
+
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img src="../../img/my_GT.png" alt="Drone" align="right" class="img-rounded"/>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img src="../../img/my_pred.png" alt="Drone" align="right" class="img-rounded"/>
+      </div>
+    </div>
+</div>
+<p>
+  As we see, the predicted solution (right)
+</p>
+
+
+<p>
+Of course, the same process can be repeated to other other fields
+ that can be and other problems. Here below, we can see the turbulent viscosity
+ around a 2D airfoil:
+<\p>
+<img src="../../img/nut_prediction_unet.png" alt="Ux" align="right" class="img-rounded"/>
