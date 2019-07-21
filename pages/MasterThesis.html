@@ -17,14 +17,10 @@ the field of numerical simulations with an emphasis on the Navier-Stokes
     <div class="row">
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <p>
-          This master thesis explores ways to apply geometric deep learning to
-          the field of numerical simulations with an emphasis on the Navier-Stokes
-           equations. With the recent success of Deep Learning, there should be
-            room for experimentation also in the field of fluid simulations.
-            Here we lead such an experiment. We propose an end-to-end differentiable
-            architecture that allow object-to-mesh predictions of fluid simulations.
-            We provide a comparison with a baseline and visual results on three different
-            datasets: airfoils, backward-facing steps and winged-drones.
+          We desire to predict the fields around an object such as velocity and
+          pressure given its
+          mesh, and thus getting a direct relation between the mesh and the
+          predicted fields.
         </p>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -33,11 +29,31 @@ the field of numerical simulations with an emphasis on the Navier-Stokes
     </div>
 </div>
 
+<p>
+  Here such a model has been built, leveraging geometric deep learning, i.e.
+  deep learning on irregular domains, on which standard convolutions would
+  fail. As a proof-of-concept we will present here only the results around the
+   <a href="https://bfs.com">backward-facing-step</a>.
+  The interested reader is invited to visit the
+  <a href="https://thesis.com">thesis itself</a> for more details and
+  different setups.
+</p>
+<p>
+  The backward facing step is an important milestone in showing result in
+  computational fluid dynamics as it has a simple geometry that hides a complex
+  phenomena: the recirculation zone [see next paragraph]. Our model is able
+  to predict the internal flow around the backward-facing-step
+  as visually shown here below, with first prediction, the groundtruth and finally
+  the absolute point-wise error. We emphatise that the prediction was made
+  mesh-to-mesh, with as additional information the boundary conditions and properties
+  of the flow (e.g. viscosity).
+</p>
 
-
-dfsdf
+<p> x-Velocity: </p>
 <img src="../../img/field-0-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<p> y-Velocity: </p>
 <img src="../../img/field-1-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<p> Pressure: </p>
 <img src="../../img/field-2-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
 
 <p>
@@ -49,21 +65,40 @@ dfsdf
 <div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="../../img/my_GT.png" alt="Drone" align="right" class="img-rounded"/>
+        <img src="../../img/my_GT.png" alt="vortex-gt" align="right" class="img-rounded"/>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="../../img/my_pred.png" alt="Drone" align="right" class="img-rounded"/>
+        <img src="../../img/my_pred.png" alt="vortex-pred" align="right" class="img-rounded"/>
       </div>
     </div>
 </div>
 <p>
-  As we see, the predicted solution (right)
+  As we see, the predicted solution (right) seems unfeasible with some
+  streamlines seemingly exiting the side of the step... And indeed it is
+  infeasible! This is because the conservation of mass has not been enforced
+  by the model. To correct this behaviour, we can add a penalisation term in the
+  loss of the network or iterate one through the domain to correct the
+  conservation.
 </p>
 
 
 <p>
 Of course, the same process can be repeated to other other fields
  that can be and other problems. Here below, we can see the turbulent viscosity
- around a 2D airfoil:
-<\p>
+ on the airfoil dataset:
+</p>
 <img src="../../img/nut_prediction_unet.png" alt="Ux" align="right" class="img-rounded"/>
+<p>
+  Application of such an application can range computer graphics to the
+  automatic design of engineering shapes. However, one application that we is
+  dear to me would be to combine this prediction to the more accurate numerical
+  simulation. An example is to initialize an iterative solver with a corrected
+  prediction, hence (hopefully) drastically decreasing the number of iterations
+  necessary to reach convergence.
+</p>
+<p>
+  I hope to have captivated your attention and convinced you that there is
+  something here that could be used in the future.
+  <br>
+  Thesis available at: <a href="https://bfs.com">infoscience</a>
+</p>
