@@ -1,0 +1,97 @@
+---
+layout: page
+title: Neural Concept
+subtitle: Story of a trainee
+use-site-title: true
+---
+<p>
+<b> Neural concept </b> was wondering how its technology could be applied to different
+applications. Our trainee explored such an application: <b>the  generalization to
+volumetric fields predictions</b>.
+</p>
+
+The desired outcome of the project can be expressed in the following way:
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+    <div class="row">
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <p>
+          We desire to predict the fields around an object such as velocity and
+          pressure given its
+          mesh, and thus getting a direct relation between the mesh and the
+          predicted fields.
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <img src="../../img/flying_drone.png" alt="Drone" align="right" class="img-rounded"/>
+      </div>
+    </div>
+</div>
+
+<p>
+  Such a model has been built, leveraging geometric deep learning, i.e.
+  deep learning on irregular domains, on which standard convolutions would
+  fail. As a proof-of-concept we will present here only the results around a
+   <b>backward-facing-step</b> and a 2D airfoil, but are easily generalized to
+   complex 3D flows as our applications will show.
+</p>
+<p>
+  The backward facing step is an important milestone for showing result in
+  computational fluid dynamics as it has a simple geometry that hides a complex
+  phenomena: the re-circulation zone [see next paragraph]. Our model is able
+  to predict the internal flow around the backward-facing-step
+  as visually shown here below, with first prediction, then groundtruth and finally
+  the absolute point-wise error. We emphatise that the prediction was made
+  mesh-to-mesh, with as additional information only the boundary conditions and properties
+  of the flow (e.g. viscosity).
+</p>
+
+<p> x-Velocity: </p>
+<img src="../../img/field-0-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<p> y-Velocity: </p>
+<img src="../../img/field-1-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+<p> Pressure: </p>
+<img src="../../img/field-2-geo2.gif" alt="Ux" align="right" class="img-rounded"/>
+
+<p>
+  Once we got all x-velocity and y-velocity we can also predict the
+  re-circulation zone behind the step, as we illustrate below.
+  In the figure we show the simulation [left], and prediction [right].
+</p>
+
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img src="../../img/my_GT.png" alt="vortex-gt" align="right" class="img-rounded"/>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img src="../../img/my_pred.png" alt="vortex-pred" align="right" class="img-rounded"/>
+      </div>
+    </div>
+</div>
+<p>
+  As we see, the predicted solution (right) seems unfeasible with some
+  streamlines seemingly exiting the side of the step... And indeed, it is
+  infeasible! It does not satisfy the conservation of mass, as it has not been enforced
+  by the model. To correct this behavior, we can add a penalization term in the
+  loss of the network or iterate one step through the domain correcting the
+  conservation.
+</p>
+
+
+<p>
+Of course, the same process can be repeated to other fields
+ that can be of interest for numerical simulations or other problems. Here below, we can see the turbulent viscosity
+ on the airfoil dataset:
+</p>
+<img src="../../img/nut_prediction_unet.png" alt="Ux" align="right" class="img-rounded"/>
+<p>
+  Application of such a model can range from computer graphics to the
+  automatic design of engineering shapes. However, one application that we is
+  dear to the trainee would be to combine this prediction to the more accurate numerical
+  simulations. An example is to initialize an iterative solver with a corrected
+  prediction, hence (hopefully) drastically decreasing the number of iterations
+  necessary to reach convergence, and with it the computational cost.
+</p>
+<p>
+  Stay tuned for more advances on this direction!
+</p>
