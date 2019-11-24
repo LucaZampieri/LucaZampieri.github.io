@@ -23,7 +23,9 @@ description: Learning.
 
 # List of links in the navigation bar
 navbar-links:
-  CV: "img/CV_Luca.pdf"
+  CV:
+    - CV_academic: "img/CvLucaZampieri.pdf"
+    - CV_visual: "img/CV_Luca.pdf"
   Travels:   "pages/travels"
   Projects:
     - Overview: "pages/Project_overview"
