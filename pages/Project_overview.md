@@ -6,6 +6,10 @@ subtitle: A small description
 ---
 Here a small description of the projects is provided as well as (when applicable) links to the code. In the github repositories you should easily find the pdf reports as well.
 
+### Master Thesis: Geometric Deep Learning for CFD (Deep Learning)
+Study the use of recent advances in Deep Learning for the prediction of Computational Fluid Dynamics predictions, on both toy datasets and industrial ones (more than 1e6 vertices per sample).  
+Project done during Spring 2019 for my master thesis with the Computer Vision Laboratory at EPFL under the supervision of Prof. Fua (EPFL), Prof. Formaggia (Polimi), Michael Defferrard (EPFL, LTS2) and PhD. Baque (EPFL).
+
 ### StaySafeGeneva (Data Analysis)
 Project of data analysis that investigate an improvement of google maps in which we also take into account the risk of a given road/itinerary. Project presented at the Applied Machine Learning Days 2018, Lausanne.
 Project done in group of 3 as part of the Applied Data Analysis course of EPFL, 2017.

@@ -1,11 +1,14 @@
 ---
 layout: page
 title: About
-subtitle: Few think and thanks
+#subtitle: Few think and thanks
 ---
 
-### Author:
-* [Luca](https://people.epfl.ch/luca.zampieri?lang=en)
+**Author:** [Luca](https://people.epfl.ch/luca.zampieri?lang=en)  
+
+The website started a bored sunday afteroon to discover a bit about building websites a while ago. It was indeed fun and I continue to play with it from now to then, and of course I try to keep updated as much as possible.
+
+
 
 ### Miscellanous:
 
