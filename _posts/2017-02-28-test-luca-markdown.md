@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Test post
-subtitle: Including some mardown
+title: Markdown reminder
 gh-repo: LucaZampieri/podHimod
 gh-badge: [star, fork, follow]
 tags: [test1, test2]

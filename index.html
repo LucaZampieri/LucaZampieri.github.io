@@ -1,20 +1,26 @@
 ---
 layout: page
-title: Welcome
+<!-- title: Welcome -->
 subtitle: Here is a bit about me, but feel free to explore
 use-site-title: true
 ---
-<h2> About me: </h2>
 
+<!--
+<center>
+  <img src="./img/ice1.jpg" alt="HTML5 Icon" style="width:1024px;height:128px;">
+</center>
+-->
+<br />
 
 <div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
     <div class="row">
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <p>
-          Student of Mathematical engineering, I like to discover new cultures and
+          Mathematical engineer, I like to discover new cultures and
           learn new languages. My academic interest is the mathematical modelling
           of engineering problems, be it through numerical analysis or machine learning.
           Other than that I sometimes play with data for fun or discover new languages.
+          Feel free to check the <a href="pages/Project_overview">  projects </a> I had fun with!
         </p>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -23,34 +29,47 @@ use-site-title: true
     </div>
 </div>
 
+<h4> Publications </h4>
+<i> Still at an early stage! </i>
 
-<div class="container-fluid">
-  Feel free to check the project page with the projects I made
-</div>
+<ul>
+<li>
+  <b> Fast Inference for Machine Learning in ROOT/TMVA </b> <br />
+  Kim Albertsson, Sitong An, Lorenzo Moneta, Stefan Wunsch, Luca Zampieri (minor contributions) <br />
+  Conference of High Energy Physics • <a href="https://indico.cern.ch/event/773049/contributions/3476168/attachments/1937600/3211545/TMVA_Fast_Inference_Poster.pdf"> Poster </a> <br />
+</li>
+<li>
+  <b> Geometric Deep Learning for Volumetric Computational Fluid Dynamics </b> <br />
+  Luca Zampieri<br />
+  EPFL • <a href="https://infoscience.epfl.ch/record/267539?ln=en"> Master thesis </a> <br />
+</li>
+<li>
+  <b> A fast inference engine for Boosted Decision Trees </b> <br />
+  Luca Zampieri<br />
+  Cern archives • <a href="http://cds.cern.ch/record/2688585/"> Report </a> <br />
+</li>
+<li>
+  <b> Stay Safe Geneva </b> <br />
+  Luca Zampieri, Martino Milani, xavier Gilcompanys <br />
+  AMLD 2018 • <a href="https://staysafegeneva.github.io/"> Website </a> <br />
+  Best 3 projects award in Applied Data Analysis course <br />
+</li>
+</ul>
 
-
-
-<h2> For the curious visiting this site, here are some curiosities: </h2>
+<h4> Contact </h4>
+Feel free to explore more about me or contact me directly on your prefered channel!
 <p>
-  - <a href="https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem#The_classical_proof">
-    Lagrange four square theorem </a> <br />
-  - <a href="https://www.britannica.com/science/Fermats-last-theorem">
-    Fermat last theorem </a> <br />
-  - <a href="https://en.wikipedia.org/wiki/God%27s_algorithm">
-    God's algorithm </a> <br />
-  - <a href="https://en.wikipedia.org/wiki/Minimax">
-    Minimax </a> <br />
-  - <a href="https://en.wikipedia.org/wiki/Riemann_hypothesis">
-    Riemann hypothesis </a> <br />
+<a href="https://github.com/LucaZampieri"> Github </a> <br />
+<a href="https://www.linkedin.com/in/luca-z-94a07447/"> Linkedin </a> <br />
+<a href="mailto: luca.zampieri@epfl.alumni.ch"> Email </a> <br />
 </p>
 
 <hr>
-<hr>
-<hr>
 
-<h1> Below is the blog section, feel free to give it a look! </h1>
-Only tests for the moment, but more to come?
-<hr>
+
+<h4> One day I might keep a blog of my activities </h4>
+But we are not there yet, are we?
+
 <!-- Here i the code for the posts -->
 <div class="posts-list">
   {% for post in paginator.posts %}
