@@ -1,9 +1,10 @@
----
+--- 
 layout: page
 title: Test using tfjs
 subtitle: Just how easy is it to use it? (very)
 use-site-title: true
----
+--- 
+
 <!-- Load TensorFlow.js. This is required to use MobileNet. -->
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
 <!-- Load the MobileNet model. -->
@@ -12,6 +13,49 @@ use-site-title: true
 <!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
 <img id="img" src="/img/travels/interrail/croatia/short1.jpg"></img>
 
+
+<input type='file' />
+<img id="yourimg" src="#" alt="your image"></img>
+
+<button onclick="predict('yourimg');">Predicts on current image</button>
+<p id="Results"></p>
+
+<script>
+  // Load your own image
+  window.addEventListener('load', function() {
+    document.querySelector('input[type="file"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            //var img = document.querySelector('img');  // $('img')[0]
+            //document.getElementById("yourimg").src = img;
+            //img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+            document.getElementById("yourimg").src = URL.createObjectURL(this.files[0]);
+            // img.onload = imageIsLoaded;
+            // show_image(img.src, 200, 100, "test")
+        }
+    });
+  });
+
+  function imageIsLoaded() {
+    alert(this.src);  // blob url
+    // update width and height ...
+  }
+
+
+  function add_google_logo() {
+      var src = "http://google.com/images/logo.gif";
+      show_image("http://google.com/images/logo.gif", 276,110, "Google Logo");
+  }
+
+
+  function show_image(src, width, height, alt) {
+      var img = document.createElement("img");
+      img.src = src;
+      img.width = width;
+      img.height = height;
+      img.alt = alt;
+      document.body.appendChild(img);
+  }
+</script>
 <!-- Place your code in the script tag below. You can also use an external .js file -->
 <script>
   // Notice there is no 'import' statement. 'mobilenet' and 'tf' is
@@ -27,4 +71,23 @@ use-site-title: true
       console.log(predictions);
     });
   });
+</script>
+
+<script>
+  // Notice there is no 'import' statement. 'mobilenet' and 'tf' is
+  // available on the index-page because of the script tag above.
+
+  function predict(){
+    const img = document.getElementById("yourimg");
+    // Load the model.
+    mobilenet.load().then(model => {
+      // Classify the image.
+      model.classify(img).then(predictions => {
+        console.log('Predictions: ');
+        console.log(predictions);
+        const str = JSON.stringify(predictions);
+        document.getElementById("Results").innerHTML = str;
+      });
+    });
+  }
 </script>
