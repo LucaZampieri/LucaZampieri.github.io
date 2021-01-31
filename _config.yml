@@ -41,6 +41,7 @@ navbar-links:
     - About: "pages/about"
     - Test: "pages/test"
     - Test tfjs: "pages/tfjs"
+    - Sparse Ideas: "pages/research_ideas"
     # - Thesis: "pages/" # Thesis"
 #  About:
 #    - Team and project: "pages/about"
